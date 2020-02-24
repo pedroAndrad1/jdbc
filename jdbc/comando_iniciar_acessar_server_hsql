@@ -1,0 +1,12 @@
+Para acessar o hsql server navegue pelo terminal do pc até a pasta lib deste projeto e execute
+os seguintes comandos:
+
+1 - Para colocar o server no ar
+java -cp hsqldb.jar org.hsqldb.server.Server  --database.0 file:loja-virtual --dbname.0 loja-virtual
+
+2 - Para acessar o server
+java -cp hsqldb.jar  org.hsqldb.util.DatabaseManager 
+
+Lembre-se em entrar na opção com o sufixo server quando usar o Manager.
+O endereço é localhost/loja-virtual. Você vai precisar abrir outra aba do terminal para acessar
+o servidor.
